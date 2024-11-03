@@ -1,0 +1,14 @@
+
+obj/
+
+Library/BurstCache/
+
+Library/PackageCache/
+
+Library/StateCache/
+
+Library/ShaderCache/
+
+Library/Artifacts/
+
+Temp/
