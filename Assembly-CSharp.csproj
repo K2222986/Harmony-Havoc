@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D838E152-2F4C-32E3-7B8E-F08DA99B6173}</ProjectGuid>
+    <ProjectGuid>{B24ECB32-8CB7-5292-9EE8-BB605696860C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,6 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\NoteScript.cs" />
+    <Compile Include="Assets\PlaySong.cs" />
+    <Compile Include="Assets\Activator.cs" />
     <Compile Include="Assets\MainMenu.cs" />
   </ItemGroup>
   <ItemGroup>

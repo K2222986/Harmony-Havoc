@@ -445,8 +445,10 @@
 -analyzer:"D:/6000.0.23f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/6000.0.23f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"D:/6000.0.23f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/Activator.cs"
 "Assets/MainMenu.cs"
 "Assets/NoteScript.cs"
+"Assets/PlaySong.cs"
 -langversion:9.0
 /deterministic
 /optimize+
