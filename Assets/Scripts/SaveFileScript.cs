@@ -7,12 +7,10 @@ public class SaveFileScript : MonoBehaviour
     public int TimeElapsed;
     public TextMeshProUGUI SaveText;
 
-    private void Start()
+
+    public void LoadName()
     {
-        if (Name != "Empty")
-        {
-            SaveText.text = Name;
-        }
+        SaveText.text = Name;
     }
 
     public void ChangeName(string name)

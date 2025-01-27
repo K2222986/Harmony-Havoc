@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEditor.Overlays;
-using Unity.Android.Gradle;
-using System.Xml.Linq;
 
 public class SavesScript : MonoBehaviour
 {
@@ -85,6 +83,7 @@ public class SavesScript : MonoBehaviour
                 {
                     saves[i].Name = data.SaveFileName[i];
                     saves[i].TimeElapsed = data.TimeElapsed[i];
+                    saves[i].LoadName();
                 }
             }
             file.Close();
