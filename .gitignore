@@ -12,3 +12,13 @@ Library/ShaderCache/
 Library/Artifacts/
 
 Temp/
+
+Library/Bee/artifacts/
+
+Library/Bee/CachedNodeOutput/
+
+Logs/
+
+UserSettings/
+
+.vs/Harmony-Havoc/FileContentIndex/
