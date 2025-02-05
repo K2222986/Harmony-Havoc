@@ -3,10 +3,23 @@ using UnityEngine.UI;
 
 public class EditorSongScript : MonoBehaviour
 {
+    public static EditorSongScript Instance;
     public GameObject Play;
     public GameObject Pause;
     public Slider timeSlider;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     public void Update()
     {
         timeSlider.maxValue = VolumeManager.Instance.musicSource.clip.length;

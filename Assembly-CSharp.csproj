@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\UIController.cs" />
     <Compile Include="Assets\Scripts\SaveFileScript.cs" />
     <Compile Include="Assets\Scripts\Activator.cs" />
+    <Compile Include="Assets\Scripts\TemplateScript.cs" />
     <Compile Include="Assets\Scripts\ScoreScript.cs" />
     <Compile Include="Assets\Scripts\Sound.cs" />
   </ItemGroup>

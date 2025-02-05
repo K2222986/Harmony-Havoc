@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1425034775936883982}
   - component: {fileID: 1468337097360205735}
   - component: {fileID: 6639114522735135324}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Note
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -153,4 +153,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d613294232298449c22dedcac574e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 1425034775936883982}
   noteSpeed: 500
