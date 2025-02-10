@@ -11,7 +11,6 @@ public class NoteScript : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("run");
         previousTime = VolumeManager.Instance.musicSource.time;
     }
     public void Update()

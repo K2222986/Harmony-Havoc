@@ -32,7 +32,7 @@ public class Activator : MonoBehaviour
         }
         if (Input.GetKeyDown(key) && active)
         {
-            Destroy(note);
+            note.SetActive(false);
             ScoreScript.instance.IncrementScore(1);
         }
     }

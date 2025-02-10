@@ -36,7 +36,8 @@ public class TemplateScript : MonoBehaviour
 
                 if (rayHit.collider == null)
                 {
-                    Instantiate(finalObject, transform.position, Quaternion.identity, GameObject.FindGameObjectWithTag("NoteContainer").transform);
+                    GameObject newNote = Instantiate(finalObject, transform.position, Quaternion.identity, GameObject.FindGameObjectWithTag("NoteContainer").transform);
+                    SaveEditor.Instance.AddToList(newNote);
                 }
             }
         }

@@ -49,6 +49,10 @@ public class EditorSongScript : MonoBehaviour
         VolumeManager.Instance.musicSource.Pause();
         Play.SetActive(true);
         Pause.SetActive(false);
+        foreach (Transform child in GameObject.FindGameObjectWithTag("NoteContainer").transform)
+        {
+            child.gameObject.SetActive(true);
+        }
     }
     public void ChangeTime()
     {

@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\SavesScript.cs" />
+    <Compile Include="Assets\Scripts\SaveEditor.cs" />
     <Compile Include="Assets\Scripts\PlaySong.cs" />
     <Compile Include="Assets\Scripts\NoteScript.cs" />
     <Compile Include="Assets\Scripts\EditorSongScript.cs" />
