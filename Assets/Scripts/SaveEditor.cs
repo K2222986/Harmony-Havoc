@@ -9,7 +9,8 @@ using System.IO.Enumeration;
 public class SaveEditor : MonoBehaviour
 {
     public static SaveEditor Instance;
-    List<Vector2> noteList = new List<Vector2>();
+    List<float> noteListx = new List<float>();
+    List<float> noteListy = new List<float>();
     string fileName = "testFile";
     [SerializeField]
     private GameObject finalObject;
@@ -31,7 +32,9 @@ public class SaveEditor : MonoBehaviour
     }
     public void AddToList(GameObject note)
     {
-        noteList.Add(note.transform.position);
+
+        noteListx.Add(note.transform.position.x);
+        noteListy.Add(note.transform.position.y + VolumeManager.Instance.musicSource.time * 500);
         AutoSave();
     }
 
@@ -42,16 +45,20 @@ public class SaveEditor : MonoBehaviour
 
         if (File.Exists(Application.persistentDataPath + "/" + fileName +".dat"))
         {
-            file = File.Open(Application.persistentDataPath + "/" + fileName + ".dat", FileMode.Open);
+            file = new FileStream(Application.persistentDataPath + "/" + fileName + ".dat", FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite);
         }
         else
         {
             file = File.Create(Application.persistentDataPath + "/" + fileName + ".dat");
         }
         EditorSave data = new EditorSave();
-        foreach (Vector2 notePos in noteList)
+        foreach (float notePos in noteListx)
         {
-            data.NotePositions.Add(notePos);
+            data.NotePositionsx.Add(notePos);
+        }
+        foreach (float notePos in noteListy)
+        {
+            data.NotePositionsy.Add(notePos);
         }
         bf.Serialize(file, data);
         file.Close();
@@ -63,13 +70,14 @@ public class SaveEditor : MonoBehaviour
         if (File.Exists(Application.persistentDataPath + "/" + fileName + ".dat"))
         {
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(Application.persistentDataPath + "/" + fileName + ".dat", FileMode.Open);
+            FileStream file = File.Open(Application.persistentDataPath + "/" + fileName + ".dat", FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite);
             EditorSave data = (EditorSave)bf.Deserialize(file);
             //data access goes here
-            for (int i = 0; i < data.NotePositions.Count; i++)
+            for (int i = 0; i < data.NotePositionsx.Count; i++)
             {
-                noteList.Add(data.NotePositions[i]);
-                Instantiate(finalObject, transform.position, Quaternion.identity, GameObject.FindGameObjectWithTag("NoteContainer").transform);
+                noteListx.Add(data.NotePositionsx[i]);
+                noteListy.Add(data.NotePositionsy[i]);
+                Instantiate(finalObject, new Vector3(data.NotePositionsx[i], data.NotePositionsy[i], -1f), Quaternion.identity, GameObject.FindGameObjectWithTag("NoteContainer").transform);
             }
             file.Close();
             Debug.Log("Editor Loaded");
@@ -82,10 +90,12 @@ public class SaveEditor : MonoBehaviour
 
 public class EditorSave
 {
-    public List<Vector2> NotePositions;
+    public List<float> NotePositionsx;
+    public List<float> NotePositionsy;
 
     public EditorSave()
     {
-        NotePositions = new List<Vector2>();
+        NotePositionsx = new List<float>();
+        NotePositionsy = new List<float>();
     }
 }
