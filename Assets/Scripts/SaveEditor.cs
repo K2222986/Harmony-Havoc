@@ -37,6 +37,22 @@ public class SaveEditor : MonoBehaviour
         noteListy.Add(note.transform.position.y + VolumeManager.Instance.musicSource.time * 500);
         AutoSave();
     }
+    public void RemoveFromList(GameObject note)
+    {
+        for (int i = 0; i < noteListy.Count; i++)
+        {
+            Debug.Log("Note y: " + note.transform.position.y + VolumeManager.Instance.musicSource.time * 500);
+            Debug.Log("Note y list: " + noteListy[i]);
+            if (noteListy[i] == note.transform.position.y + VolumeManager.Instance.musicSource.time * 500 && noteListx[i] == note.transform.position.x)
+            {
+                Debug.Log("Deleted");
+                noteListy.RemoveAt(i);
+                noteListx.RemoveAt(i);
+                AutoSave();
+                i = noteListy.Count;
+            }
+        }
+    }
 
     public void AutoSave()
     {

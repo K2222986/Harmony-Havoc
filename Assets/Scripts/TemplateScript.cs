@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -39,6 +40,12 @@ public class TemplateScript : MonoBehaviour
                     GameObject newNote = Instantiate(finalObject, transform.position, Quaternion.identity, GameObject.FindGameObjectWithTag("NoteContainer").transform);
                     SaveEditor.Instance.AddToList(newNote);
                 }
+            }
+            if (Input.GetMouseButtonDown(1))
+            {
+                RaycastHit2D rayHit = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, allTilesLayer);
+                SaveEditor.Instance.RemoveFromList(rayHit.transform.gameObject);
+                Destroy(rayHit.transform.gameObject);
             }
         }
     }
