@@ -11,9 +11,10 @@ public class SaveEditor : MonoBehaviour
     public static SaveEditor Instance;
     List<float> noteListx = new List<float>();
     List<float> noteListy = new List<float>();
+    List<int> noteListID = new List<int>();
     string fileName = "testFile";
     [SerializeField]
-    private GameObject finalObject;
+    private NoteScript finalObject;
 
     private void Awake()
     {
@@ -30,12 +31,36 @@ public class SaveEditor : MonoBehaviour
     {
         LoadEditor();
     }
-    public void AddToList(GameObject note)
+    public void AddToList(NoteScript note)
     {
-
+        if (noteListID.Count > 0)
+        {
+            note.noteID = noteListID[noteListID.Count - 1] + 1;
+            noteListID.Add(note.noteID);
+        }
+        else
+        {
+            note.noteID = 0;
+            noteListID.Add(0);
+        }
         noteListx.Add(note.transform.position.x);
         noteListy.Add(note.transform.position.y + VolumeManager.Instance.musicSource.time * 500);
         AutoSave();
+    }
+    public void RemoveFromList(GameObject note)
+    {
+        for (int i = 0; i < noteListID.Count; i++)
+        {
+            if (noteListID[i] == note.GetComponent<NoteScript>().noteID)
+            {
+                Debug.Log("Deleted");
+                noteListID.RemoveAt(i);
+                noteListy.RemoveAt(i);
+                noteListx.RemoveAt(i);
+                AutoSave();
+                i = noteListID.Count;
+            }
+        }
     }
 
     public void AutoSave()
@@ -60,6 +85,10 @@ public class SaveEditor : MonoBehaviour
         {
             data.NotePositionsy.Add(notePos);
         }
+        foreach (int noteID in noteListID)
+        {
+            data.NoteID.Add(noteID);
+        }
         bf.Serialize(file, data);
         file.Close();
         Debug.Log("Editor Saved");
@@ -77,7 +106,9 @@ public class SaveEditor : MonoBehaviour
             {
                 noteListx.Add(data.NotePositionsx[i]);
                 noteListy.Add(data.NotePositionsy[i]);
-                Instantiate(finalObject, new Vector3(data.NotePositionsx[i], data.NotePositionsy[i], -1f), Quaternion.identity, GameObject.FindGameObjectWithTag("NoteContainer").transform);
+                noteListID.Add(data.NoteID[i]);
+                NoteScript newNote = Instantiate(finalObject, new Vector3(data.NotePositionsx[i], data.NotePositionsy[i], -1f), Quaternion.identity, GameObject.FindGameObjectWithTag("NoteContainer").transform);
+                newNote.noteID = data.NoteID[i];
             }
             file.Close();
             Debug.Log("Editor Loaded");
@@ -92,10 +123,12 @@ public class EditorSave
 {
     public List<float> NotePositionsx;
     public List<float> NotePositionsy;
+    public List<int> NoteID;
 
     public EditorSave()
     {
         NotePositionsx = new List<float>();
         NotePositionsy = new List<float>();
+        NoteID = new List<int>();
     }
 }

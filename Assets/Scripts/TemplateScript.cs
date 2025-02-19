@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,7 +7,7 @@ public class TemplateScript : MonoBehaviour
     private Vector2 gridSize;
     private Vector2 gridAdjustment;
     [SerializeField]
-    private GameObject finalObject;
+    private NoteScript finalObject;
 
     private Vector2 mousePos;
 
@@ -36,9 +37,15 @@ public class TemplateScript : MonoBehaviour
 
                 if (rayHit.collider == null)
                 {
-                    GameObject newNote = Instantiate(finalObject, transform.position, Quaternion.identity, GameObject.FindGameObjectWithTag("NoteContainer").transform);
+                    NoteScript newNote = Instantiate(finalObject, transform.position, Quaternion.identity, GameObject.FindGameObjectWithTag("NoteContainer").transform);
                     SaveEditor.Instance.AddToList(newNote);
                 }
+            }
+            if (Input.GetMouseButtonDown(1))
+            {
+                RaycastHit2D rayHit = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, allTilesLayer);
+                SaveEditor.Instance.RemoveFromList(rayHit.transform.gameObject);
+                Destroy(rayHit.transform.gameObject);
             }
         }
     }

@@ -8,6 +8,7 @@ public class NoteScript : MonoBehaviour
     public Rigidbody2D rb;
     public float noteSpeed;
     private float previousTime;
+    public int noteID;
 
     private void Awake()
     {
@@ -17,7 +18,7 @@ public class NoteScript : MonoBehaviour
     {
         if (SceneManager.GetSceneByName("Game").isLoaded)
         {
-            rb.linearVelocity = new Vector2(0, -noteSpeed);
+            rb.velocity = new Vector2(0, -noteSpeed);
         }
         else
         {
