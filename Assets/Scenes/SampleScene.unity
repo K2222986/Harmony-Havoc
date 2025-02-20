@@ -42,8 +42,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 13
-  m_BakeOnSceneLoad: 0
+  serializedVersion: 12
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -493,9 +492,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 638955394}
+      - m_Target: {fileID: 1441265288}
         m_TargetAssemblyTypeName: SavesScript, Assembly-CSharp
-        m_MethodName: SaveSaves
+        m_MethodName: SetupSave
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 195700780}
+          m_ObjectArgumentAssemblyTypeName: SaveFileScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1435185343}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: StartEditor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -862,9 +873,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 638955394}
+      - m_Target: {fileID: 1441265288}
         m_TargetAssemblyTypeName: SavesScript, Assembly-CSharp
-        m_MethodName: SaveSaves
+        m_MethodName: SetupSave
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 427764608}
+          m_ObjectArgumentAssemblyTypeName: SaveFileScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1435185343}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: StartEditor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1510,7 +1533,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638955393}
-  - component: {fileID: 638955394}
   m_Layer: 0
   m_Name: EditorMenu
   m_TagString: Untagged
@@ -1534,22 +1556,6 @@ Transform:
   - {fileID: 705588917}
   m_Father: {fileID: 1066454153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &638955394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638955392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47bc21022015e234d89c9136a71748e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saves:
-  - {fileID: 427764608}
-  - {fileID: 1630519692}
-  - {fileID: 195700780}
 --- !u!1 &702040243
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,6 +3067,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5322df9ce0f936b4ca63cd7a00b5b16d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1441265286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1441265287}
+  - component: {fileID: 1441265288}
+  m_Layer: 0
+  m_Name: SaveSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1441265287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441265286}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1441265288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441265286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47bc21022015e234d89c9136a71748e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saves:
+  - {fileID: 427764608}
+  - {fileID: 1630519692}
+  - {fileID: 195700780}
+  CurrentSave: {fileID: 0}
 --- !u!1 &1527380488
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,9 +3511,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 638955394}
+      - m_Target: {fileID: 1441265288}
         m_TargetAssemblyTypeName: SavesScript, Assembly-CSharp
-        m_MethodName: SaveSaves
+        m_MethodName: SetupSave
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1630519692}
+          m_ObjectArgumentAssemblyTypeName: SaveFileScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1435185343}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: StartEditor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4081,3 +4148,4 @@ SceneRoots:
   - {fileID: 1066454153}
   - {fileID: 38750870}
   - {fileID: 8361776252335767385}
+  - {fileID: 1441265287}
