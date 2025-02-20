@@ -8,11 +8,24 @@ using UnityEditor.Overlays;
 public class SavesScript : MonoBehaviour
 {
     public SaveFileScript[] saves;
-    private SaveFileScript CurrentSave;
+    public SaveFileScript CurrentSave;
+    public static SavesScript Instance;
 
     private void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
         LoadSaves();
+    }
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     public void SetupSave(SaveFileScript activeSave)
     {
