@@ -13,9 +13,13 @@ public class SaveFileScript : MonoBehaviour
         SaveText.text = Name;
     }
 
-    public void ChangeName(string name)
+    public void SetName(string name)
     {
         Name = name;
+    }
+    public string GetName()
+    {
+        return Name;
     }
     public void ChangeTime(int timeElapsed)
     {

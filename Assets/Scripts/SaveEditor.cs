@@ -29,7 +29,7 @@ public class SaveEditor : MonoBehaviour
     }
     private void Start()
     {
-        fileName = SavesScript.Instance.CurrentSave.Name;
+        fileName = SavesScript.Instance.CurrentSave.GetName();
         LoadEditor();
     }
     public void AddToList(NoteScript note)

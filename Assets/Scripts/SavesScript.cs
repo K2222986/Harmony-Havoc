@@ -4,12 +4,18 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEditor.Overlays;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class SavesScript : MonoBehaviour
 {
     public SaveFileScript[] saves;
     public SaveFileScript CurrentSave;
     public static SavesScript Instance;
+    public GameObject SaveContainer;
+    public GameObject InputContainer;
+    public TMP_InputField inputName;
 
     private void Start()
     {
@@ -30,10 +36,23 @@ public class SavesScript : MonoBehaviour
     public void SetupSave(SaveFileScript activeSave)
     {
         CurrentSave = activeSave;
+        if (CurrentSave.GetName() == "Empty")
+        {
+            SaveContainer.SetActive(false);
+            InputContainer.SetActive(true);
+        }
+        else
+        {
+            SceneManager.LoadScene(2);
+        }
     }
-    public void CreateNewSave(string inputName)
+    public void CreateNewSave()
     {
-        CurrentSave.Name = inputName;
+        
+        CurrentSave.SetName(inputName.text);
+        CurrentSave.LoadName();
+        SaveContainer.SetActive(true);
+        InputContainer.SetActive(false);
         SaveSaves();
     }
     public void SaveSaves(string Name, int TimeElapsed)
@@ -94,7 +113,7 @@ public class SavesScript : MonoBehaviour
             {
                 if (data.SaveFileName[i] != "Empty")
                 {
-                    saves[i].Name = data.SaveFileName[i];
+                    saves[i].SetName(data.SaveFileName[i]);
                     saves[i].TimeElapsed = data.TimeElapsed[i];
                     saves[i].LoadName();
                 }
