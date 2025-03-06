@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\midiscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\assets\\scripts\\saveeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\saveeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|c:\\users\\k2222986\\downloads\\harmony-havoc\\assets\\scripts\\editorsongscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\editorsongscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\assets\\scripts\\templatescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\templatescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\assets\\scripts\\notescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\notescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|c:\\users\\k2222986\\downloads\\harmony-havoc\\assets\\scripts\\volumemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\volumemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\assets\\scripts\\notescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\notescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\assets\\scripts\\sound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,6 +29,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\assets\\scripts\\savesscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savesscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\assets\\scripts\\saveeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\saveeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\assets\\scripts\\templatescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\templatescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B24ECB32-8CB7-5292-9EE8-BB605696860C}|Assembly-CSharp.csproj|C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\assets\\scripts\\savefilescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,19 +54,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MidiScript.cs",
-              "DocumentMoniker": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\MidiScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MidiScript.cs",
-              "ToolTip": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\MidiScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MidiScript.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwAkAAAA/AAAA",
+              "DocumentIndex": 2,
+              "Title": "VolumeManager.cs",
+              "DocumentMoniker": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\VolumeManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\VolumeManager.cs",
+              "ToolTip": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\VolumeManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\VolumeManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T14:25:25.687Z",
+              "WhenOpened": "2025-03-06T16:49:50.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditorSongScript.cs",
+              "DocumentMoniker": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\EditorSongScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EditorSongScript.cs",
+              "ToolTip": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\EditorSongScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EditorSongScript.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wCoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T16:47:26.092Z",
               "EditorCaption": ""
             },
             {
@@ -67,7 +88,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "MidiScript.cs",
+              "DocumentMoniker": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\MidiScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MidiScript.cs",
+              "ToolTip": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\MidiScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MidiScript.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAswC4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T14:25:25.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
@@ -80,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "SaveEditor.cs",
               "DocumentMoniker": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\SaveEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SaveEditor.cs",
@@ -88,12 +122,11 @@
               "RelativeToolTip": "Assets\\Scripts\\SaveEditor.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T15:01:03.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T15:01:03.789Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "TemplateScript.cs",
               "DocumentMoniker": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\TemplateScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TemplateScript.cs",
@@ -101,12 +134,11 @@
               "RelativeToolTip": "Assets\\Scripts\\TemplateScript.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:10:04.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:10:04.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "NoteScript.cs",
               "DocumentMoniker": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\NoteScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NoteScript.cs",
@@ -119,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "SaveFileScript.cs",
               "DocumentMoniker": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\SaveFileScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SaveFileScript.cs",
@@ -131,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "UIController.cs",
               "DocumentMoniker": "C:\\Users\\K2222986\\Downloads\\Harmony-Havoc\\Assets\\Scripts\\UIController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIController.cs",
@@ -151,7 +183,8 @@
               "RelativeToolTip": "Assets\\Scripts\\Sound.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T16:25:28.293Z"
+              "WhenOpened": "2025-01-27T16:25:28.293Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -163,7 +196,8 @@
               "RelativeToolTip": "Assets\\Scripts\\SavesScript.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAowC0AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T15:47:08.018Z"
+              "WhenOpened": "2025-01-27T15:47:08.018Z",
+              "EditorCaption": ""
             }
           ]
         }

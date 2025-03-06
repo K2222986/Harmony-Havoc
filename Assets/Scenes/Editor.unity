@@ -1045,6 +1045,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8187207947252339505, guid: 02d3c2aff22306e4f9274fe14d145d21, type: 3}
+      propertyPath: musicSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187207947252339505, guid: 02d3c2aff22306e4f9274fe14d145d21, type: 3}
+      propertyPath: musicSounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5bb74b41e5556a043ba851c9140887ef, type: 3}
+    - target: {fileID: 8187207947252339505, guid: 02d3c2aff22306e4f9274fe14d145d21, type: 3}
+      propertyPath: musicSounds.Array.data[1].name
+      value: Rush E
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187207947252339505, guid: 02d3c2aff22306e4f9274fe14d145d21, type: 3}
+      propertyPath: musicSounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4804fdf3438273e4b903959c48d6d2fb, type: 3}
+    - target: {fileID: 8187207947252339505, guid: 02d3c2aff22306e4f9274fe14d145d21, type: 3}
+      propertyPath: musicSounds.Array.data[2].name
+      value: sigma boy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3132,7 +3152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7679e0e3bdee7294c82c050beba12ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileName: Assets/MIDI/londons-burning.mid
+  track1: 
+  track2: 
+  track3: 
+  track4: 
+  track5: 
+  fileName: Assets/MIDI/rush_e_real.mid
+  midiString: 
   finalObject: {fileID: 6639114522735135324, guid: ba02ad140bbc61f4a88ac05264d06915, type: 3}
 --- !u!4 &1695908387
 Transform:
