@@ -26,7 +26,7 @@ public class VolumeManager : MonoBehaviour
 
     public void Start()
     {
-        musicSource.clip = musicSounds[0].clip;
+        musicSource.clip = musicSounds[1].clip;
     }
 
 

@@ -39,7 +39,7 @@ public class EditorSongScript : MonoBehaviour
     }
     public void PlaySong()
     {
-        VolumeManager.Instance.PlayMusic("Cartoon");
+        VolumeManager.Instance.PlayMusic("Rush E");
         Play.SetActive(false);
         Pause.SetActive(true);
 
