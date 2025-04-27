@@ -32,6 +32,7 @@ public class GoodCollider : MonoBehaviour
             }
             noteMessage = Instantiate(miss, new Vector3(510, 180), transform.rotation, GameObject.FindGameObjectWithTag("NoteMessages").transform);
             Destroy(noteMessage, 1f);
+            Combo.Instance.streak = 0;
         }
     }
 }

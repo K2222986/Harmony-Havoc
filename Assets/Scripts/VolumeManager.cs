@@ -9,7 +9,7 @@ public class VolumeManager : MonoBehaviour
 {
     public static VolumeManager Instance;
 
-    public Sound[] musicSounds, sfxSounds;
+    public List<Sound> musicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
 
     private void Awake()
@@ -32,7 +32,7 @@ public class VolumeManager : MonoBehaviour
 
     public void PlayMusic(string name)
     {
-        Sound s = Array.Find(musicSounds, x => x.name == name);
+        Sound s = musicSounds.Find(x => x.name == name);
 
         if (s == null)
         {
@@ -48,7 +48,7 @@ public class VolumeManager : MonoBehaviour
 
     public void PlaySFX(string name)
     {
-        Sound s = Array.Find(sfxSounds, x => x.name == name);
+        Sound s = sfxSounds.Find(x => x.name == name);
 
         if (s == null)
         {

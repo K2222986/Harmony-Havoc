@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -39,7 +40,7 @@ public class EditorSongScript : MonoBehaviour
     }
     public void PlaySong()
     {
-        VolumeManager.Instance.PlayMusic("Rush E");
+        VolumeManager.Instance.PlayMusic(FileFinder.Instance.m_DropOptions2[FileFinder.Instance.m_Dropdown2.value]);
         Play.SetActive(false);
         Pause.SetActive(true);
 
