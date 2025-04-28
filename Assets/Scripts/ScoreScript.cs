@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScoreScript : MonoBehaviour
 {
     public static ScoreScript instance;
-    private int score;
+    public int score;
     public TextMeshProUGUI ScoreText;
 
     private void Start()

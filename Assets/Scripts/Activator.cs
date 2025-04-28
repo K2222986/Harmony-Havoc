@@ -1,3 +1,4 @@
+using MyGameUILibrary;
 using System.Collections;
 using UnityEngine;
 
@@ -54,7 +55,7 @@ public class Activator : MonoBehaviour
         {
             StartCoroutine(Pressed());
             if (messageContainer.transform.childCount > 0)
-            { 
+            {
                 foreach (Transform message in messageContainer.transform)
                 {
                     Destroy(message.gameObject);

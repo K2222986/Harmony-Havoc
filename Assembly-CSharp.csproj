@@ -62,12 +62,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\SavesScript.cs" />
+    <Compile Include="Assets\Scripts\Leaderboard.cs" />
     <Compile Include="Assets\Scripts\GoodCollider.cs" />
+    <Compile Include="Assets\radial-progress\RadialProgress.cs" />
     <Compile Include="Assets\Scripts\SaveEditor.cs" />
     <Compile Include="Assets\Scripts\PlaySong.cs" />
     <Compile Include="Assets\Scripts\MidiScript.cs" />
     <Compile Include="Assets\Scripts\NoteScript.cs" />
     <Compile Include="Assets\Scripts\Combo.cs" />
+    <Compile Include="Assets\radial-progress\RadialProgressComponent.cs" />
     <Compile Include="Assets\Scripts\PerfectCollider.cs" />
     <Compile Include="Assets\Scripts\EditorSongScript.cs" />
     <Compile Include="Assets\Scripts\ExtensionMethods.cs" />
@@ -103,6 +106,8 @@
     <None Include="Assets\Packages\NAudio.1.9.0\lib\netstandard2.0\NAudio.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\radial-progress\RadialProgress.uss" />
+    <None Include="Assets\radial-progress\RadialProgressExample.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

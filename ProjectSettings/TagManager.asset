@@ -11,6 +11,7 @@ TagManager:
   - Great
   - Good
   - NoteMessages
+  - LeaderboardScoreContainer
   layers:
   - Default
   - TransparentFX

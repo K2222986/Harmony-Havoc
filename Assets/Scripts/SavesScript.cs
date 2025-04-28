@@ -6,6 +6,8 @@ using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.ComponentModel.Design;
+using System.Linq;
 
 public class SavesScript : MonoBehaviour
 {
@@ -18,7 +20,6 @@ public class SavesScript : MonoBehaviour
 
     private void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
         LoadSaves();
     }
     private void Awake()
@@ -53,6 +54,13 @@ public class SavesScript : MonoBehaviour
         SaveContainer.SetActive(true);
         InputContainer.SetActive(false);
         SaveSaves();
+    }
+    public void DeleteSave(int save)
+    {
+        saves[save].SetName("Empty");
+        SaveSaves();
+        LoadSaves();
+        saves[save].LoadName();
     }
     public void SaveSaves(string Name, int TimeElapsed)
     {
@@ -102,8 +110,10 @@ public class SavesScript : MonoBehaviour
     }
     public void LoadSaves()
     {
+        Debug.Log("LoadSaves run");
         if (File.Exists(Application.persistentDataPath + "/saveNames.dat"))
         {
+            Debug.Log("If statement run");
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/saveNames.dat", FileMode.Open);
             SaveData data = (SaveData)bf.Deserialize(file);

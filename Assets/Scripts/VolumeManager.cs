@@ -24,9 +24,10 @@ public class VolumeManager : MonoBehaviour
         }
     }
 
-    public void Start()
+
+    public void PressPlay()
     {
-        musicSource.clip = musicSounds[1].clip;
+        PlayMusic(FileFinder.Instance.m_DropOptions2[FileFinder.Instance.m_Dropdown2.value]);
     }
 
 

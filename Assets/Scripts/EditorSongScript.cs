@@ -23,8 +23,15 @@ public class EditorSongScript : MonoBehaviour
 
     public void Update()
     {
-        timeSlider.maxValue = VolumeManager.Instance.musicSource.clip.length;
-        timeSlider.value = VolumeManager.Instance.musicSource.time;
+        try
+        {
+            timeSlider.maxValue = VolumeManager.Instance.musicSource.clip.length;
+            timeSlider.value = VolumeManager.Instance.musicSource.time;
+        }
+        catch
+        {
+            timeSlider.value = 0;
+        }
     }
 
     public void Press()
