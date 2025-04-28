@@ -57,6 +57,7 @@ public class MidiScript : MonoBehaviour
     }
     public void LoadMidiFile()
     {
+        fileName = "Assets/MIDI/" + FileFinder.Instance.m_DropOptions[FileFinder.Instance.m_Dropdown.value];
         var strictMode = false;
         var mf = new MidiFile(fileName, strictMode);
         Debug.Log("Format {0}, Tracks {1}, Delta Ticks Per Quarter Note {2}" +

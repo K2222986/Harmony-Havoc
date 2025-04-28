@@ -55,6 +55,9 @@ public class EditorSongScript : MonoBehaviour
     public void PauseSong()
     {
         VolumeManager.Instance.musicSource.Pause();
+        ScoreScript.instance.score = 0;
+        ScoreScript.instance.UpdateScoreDisplay();
+        Combo.Instance.streak = 0;
         Play.SetActive(true);
         Pause.SetActive(false);
         foreach (Transform child in GameObject.FindGameObjectWithTag("NoteContainer").transform)
