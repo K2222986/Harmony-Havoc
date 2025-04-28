@@ -26,7 +26,7 @@ public class MidiScript : MonoBehaviour
  "A7", "A#7", "B7", "C8"};
     int noteTotal = 0;
     int eventIndex;
-    public string fileName = "Assets/MIDI/rush_e_real.mid";
+    public string fileName;
     public string midiString;
     private int tempInt;
     private string tempString;
