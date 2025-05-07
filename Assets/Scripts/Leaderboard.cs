@@ -16,7 +16,7 @@ public class Leaderboard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!VolumeManager.Instance.musicSource.isPlaying)
+        if (!VolumeManager.Instance.musicSource.isPlaying && VolumeManager.Instance.musicSource.time == 0)
         {
             leaderboardUI.SetActive(true);
             LoadLeaderboard();

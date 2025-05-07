@@ -70,4 +70,13 @@ public class VolumeManager : MonoBehaviour
     {
         sfxSource.volume = volume;
     }
+
+    public void Play()
+    {
+        musicSource.Play();
+    }
+    public void Pause()
+    {
+        musicSource.Pause();
+    }
 }
